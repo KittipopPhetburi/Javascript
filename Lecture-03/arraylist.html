@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Array.forEach()</h2>
+    <p>Calls a function for each array element.</p>
+    <p id="demo"></p>
+
+    <script>
+        var txt = "";
+        var txt2 = "member ";
+        var numbers = [45,4,9,16,25];
+        var i = 0;
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML = txt;
+        txt.unshift("member")
+
+        function myFunction(value){
+            txt = txt.concat(txt2) + i + "=>" + value +"<br>" ;
+            i += 1;
+        }
+    </script>
+
+</body>
+</html>
